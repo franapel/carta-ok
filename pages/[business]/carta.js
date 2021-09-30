@@ -13,7 +13,13 @@ export default function BusinessMenu({ business, products, categories }) {
 
 export async function getServerSideProps(context) {
     const business = context.query.business
-    const res = await fetch("http://localhost:3000/products.json")
+    const path = context.req.headers.host
+    let res
+    try {
+        res = await fetch("https://" + path + "/products.json")
+    } catch (e) {
+        res = await fetch("http://" + path + "/products.json")
+    }
     const data = await res.json()
     const businessJSON = data.business_list.find(b => b.business === business)
     const categories = businessJSON.product_categories
