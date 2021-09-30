@@ -1,0 +1,60 @@
+{
+    "business_list": [
+        {
+            "business": "okbill",
+            "product_categories": ["Schop 500 CC.", "Schop 250 CC.", "Cocktail", "Destilados", "Pizza", "Bebidas"], 
+            "products": [
+                {
+                    "id": "a1",
+                    "name": "Cherimola",
+                    "category": "Schop 500 CC.",
+                    "price": 4400,
+                    "features": {
+                        "alcoholic_grade": "5.8°",
+                        "IBU": "40",
+                        "origin": "Curacaví",
+                        "size": "500 c.c."
+                    },
+                    "image": "cherimola.webp"
+                },
+                {
+                    "id": "a2",
+                    "name": "Roth Barley Wine",
+                    "category": "Schop 250 CC.",
+                    "price": 4500,
+                    "image": "roth_barley_wine.webp"
+                },
+                {
+                    "id": "a3",
+                    "name": "Pisco Sour Tradicional",
+                    "category": "Cocktail",
+                    "price": 3500,
+                    "image": "pisco_sour_tradicional.webp"
+                },
+                {
+                    "id": "a4",
+                    "name": "Piscola Mistral 40",
+                    "category": "Destilados",
+                    "price": 4500,
+                    "ingredients": ["Salame", "Queso mantecoso", "Mozzarella", "Salsa de tomates"],
+                    "image": "piscola_mistral_40.webp"
+                },
+                {
+                    "id": "a5",
+                    "name": "Pizza Pepperoni",
+                    "category": "Pizza",
+                    "price": 10000,
+                    "ingredients": ["Salame", "Queso mantecoso", "Mozzarella", "Salsa de tomates"],
+                    "image": "pizza_pepperoni.webp"
+                },
+                {
+                    "id": "a6",
+                    "name": "Coca-Cola",
+                    "category": "Bebidas",
+                    "price": 1800,
+                    "image": "coca_cola.webp"
+                }
+            ]
+        }
+    ]
+}

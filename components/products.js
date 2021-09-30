@@ -1,14 +1,13 @@
-import Category from "./category"
+import Category from "./Category"
 
-export default function Products( {categories, products} ) {
+export default function Products({ business, categories, products }) {
     let remainProducts = []
-    return(
-        
+    return (
         <div>
             {categories.map(category => {
-                const productsByCategory =[]
+                const productsByCategory = []
                 for (const product of products) {
-                    if (product.menuname.toLowerCase().includes(category.toLowerCase())) {
+                    if (product.category.toLowerCase().includes(category.toLowerCase())) {
                         productsByCategory.push(product)
                     } else {
                         remainProducts.push(product)
@@ -16,11 +15,10 @@ export default function Products( {categories, products} ) {
                 }
                 products = [...remainProducts]
                 remainProducts = []
-                return(
-                    category!="Others" ? <Category products={productsByCategory} category={category} key={category}/> 
-                        : <Category products={products} category={category} key={category}/>
+                return (
+                    category != "Others" ? <Category business={business} products={productsByCategory} key={category} />
+                        : <Category business={business} products={products} key={category} />
                 )
-                
             })}
         </div>
     )

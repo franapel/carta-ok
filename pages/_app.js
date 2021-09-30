@@ -1,12 +1,11 @@
 import 'tailwindcss/tailwind.css'
-import Header from "../components/header"
 
 function MyApp({ Component, pageProps }) {
-  return (<>
-    <Header src="logo_1.webp"/>
-    <Component {...pageProps} />
-    
-    </>)
+  return (
+    <div className="z-30">
+      <Component {...pageProps}/>
+    </div>
+  )
 }
 
 export default MyApp
