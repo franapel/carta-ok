@@ -6,7 +6,10 @@ export default function SingleProduct({ business, product }) {
 
     return (
         <div className="flex flex-col p-3 border">
-            <Image loader={myLoader} src={imgUrl} width={400} height={400} objectFit={'contain'} />
+            <div>
+                <Image className="animate-fade" loader={myLoader} src={imgUrl} width={400} height={400} objectFit={'contain'} />
+
+            </div>
             <p className="text-2xl">{product.name}</p>
             <p className="text-md">{product.name}</p>
             <p className="text-md mt-auto">{`$${product.price}`}</p>
