@@ -37,7 +37,17 @@
                     "category": "Destilados",
                     "price": 4500,
                     "ingredients": ["Salame", "Queso mantecoso", "Mozzarella", "Salsa de tomates"],
-                    "image": "piscola_mistral_40.webp"
+                    "image": "piscola_mistral_40.webp",
+                    "options": [
+                        {
+                            "name": "Bebidas",
+                            "opts": ["Bebida1", "Bebida2", "Bebida3"]
+                        },
+                        {
+                            "name": "Platos",
+                            "opts": ["Plato1", "Plato2", "Plato3"]
+                        }
+                    ]
                 },
                 {
                     "id": "a5",

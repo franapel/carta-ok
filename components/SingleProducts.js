@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Options from './Options'
 
 export default function SingleProduct({ business, product }) {
     const imgUrl = `/${business}/${product.image}`
@@ -11,7 +12,9 @@ export default function SingleProduct({ business, product }) {
 
             <p className="text-2xl">{product.name}</p>
             <p className="text-md">{product.name}</p>
-            <p className="text-md mt-auto">{`$${product.price}`}</p>
+            <p className="text-md mt-auto mb-10">{`$${product.price}`}</p>
+
+            <Options options={product.options}/>
         </div>
     )
 }
