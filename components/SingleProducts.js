@@ -14,7 +14,7 @@ export default function SingleProduct({ business, product }) {
             <p className="text-md">{product.name}</p>
             <p className="text-md mt-auto mb-10">{`$${product.price}`}</p>
 
-            <Options options={product.options}/>
+            {product.options && <Options options={product.options}/>}
         </div>
     )
 }
