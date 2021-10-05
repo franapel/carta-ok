@@ -66,5 +66,50 @@
                 }
             ]
         }
+    ],
+
+    "order_history": [
+        {
+            "id": "o01",
+            "user": "fco",
+            "business": "okbill",
+            "order_products": [
+                {
+                    "product_id": "a1",
+                    "quantity": 2
+                },
+                {
+                    "product_id": "a3",
+                    "quantity": 1
+                },
+                {
+                    "product_id": "a4",
+                    "quantity": 3
+                },
+                {
+                    "product_id": "a5",
+                    "quantity": 2
+                }
+            ],
+            "total_price": 30000,
+            "payment_method": "Tarjeta de débito",
+            "order_date": "2021-10-05T15:35:43.511Z"
+            
+        },
+        {
+            "id": "o02",
+            "user": "fco",
+            "business": "okbill",
+            "order_products": [
+                {
+                    "product_id": "a3",
+                    "quantity": 4
+                }
+            ],
+            "total_price": 30000,
+            "payment_method": "Tarjeta de débito",
+            "order_date": "2021-09-24T10:13:43.511Z"
+            
+        }
     ]
 }
