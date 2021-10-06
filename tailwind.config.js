@@ -6,12 +6,24 @@ module.exports = {
     extend: {
       animation: {
         fade: 'fadeOut 2s ease-in-out',
+        grow: 'growDown .3s ease-in-out forwards'
       },
       keyframes: theme => ({
         fadeOut: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
         },
+        growDown: {
+          '0%' : {
+            transform: 'scaleY(0)',
+          },
+          '80%' : {
+            transform: 'scaleY(1.1)',
+          },
+          '100%' : {
+            transform: 'scaleY(1)',
+          }
+        }
       }),
     },
   },
