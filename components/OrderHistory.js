@@ -4,8 +4,9 @@ export default function OrderHistory({ orders, products }) {
         //Ocultar detalles de todos los pedidos menos el seleccionado
         document.querySelectorAll(".highlight-container").forEach(hlc => {
             if (hlc.id != higlightId) {
-                hlc.classList.remove("border-4")
+                hlc.classList.remove("border-2")
                 hlc.classList.remove("border-green-400")
+                hlc.classList.add("border")
             }
         })        
         document.querySelectorAll(".detail-container").forEach(dc => dc.id != detailId && dc.classList.add("hidden"))
@@ -14,13 +15,15 @@ export default function OrderHistory({ orders, products }) {
         //Mostrar u ocultar detalles del pedido seleccionado
         if (document.getElementById(detailId).classList.toggle("hidden")) {
             e.target.innerText = "Detalle"
-            document.getElementById(higlightId).classList.remove("border-4")
+            document.getElementById(higlightId).classList.remove("border-2")
             document.getElementById(higlightId).classList.remove("border-green-400")
+            document.getElementById(higlightId).classList.add("border")
         }
         else {
             e.target.innerText = "Ocultar detalle"
-            document.getElementById(higlightId).classList.add("border-4")
-            document.getElementById(higlightId).classList.add("border-green-400")
+            document.getElementById(higlightId).classList.remove("border")
+            document.getElementById(higlightId).classList.add("border-2")
+            document.getElementById(higlightId).classList.add("border-green-400")            
         }
     }
 
