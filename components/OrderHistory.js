@@ -3,11 +3,11 @@ export default function OrderHistory({ orders, products }) {
     const handleDetailsClick = (higlightId, detailId, e) => {
         if (document.getElementById(detailId).classList.toggle("hidden")) {
             e.target.innerText = "Detalle"
-            document.getElementById(higlightId).classList.remove("bg-green-100")
+            document.getElementById(higlightId).classList.remove("bg-green-200")
         }
         else {
             e.target.innerText = "Ocultar detalle"
-            document.getElementById(higlightId).classList.add("bg-green-100")
+            document.getElementById(higlightId).classList.add("bg-green-200")
         }
         
     }
@@ -37,7 +37,7 @@ export default function OrderHistory({ orders, products }) {
                         </div>
 
 
-                        <div className="mx-1 px-4 py-3 border border-t-0 bg-gray-200 hidden animate-grow origin-top" id={order.id + "detail"}>
+                        <div className="mx-1 px-4 py-3 border border-t-0 bg-gray-100 hidden animate-grow origin-top" id={order.id + "detail"}>
                             <p className="text-xs lg:text-base">Precio total: {order.total_price}</p>
                             <p className="text-xs lg:text-base">Método de pago: {order.payment_method}</p>
                             <p className="text-xs lg:text-base">Fecha de compra: {order.order_date}</p>
