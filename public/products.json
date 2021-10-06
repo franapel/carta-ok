@@ -110,6 +110,29 @@
             "payment_method": "Tarjeta de débito",
             "order_date": "2021-09-24T10:13:43.511Z"
             
+        },
+        {
+            "id": "o03",
+            "user": "fco",
+            "business": "okbill",
+            "order_products": [
+                {
+                    "product_id": "a3",
+                    "quantity": 3
+                },
+                {
+                    "product_id": "a1",
+                    "quantity": 1
+                },
+                {
+                    "product_id": "a4",
+                    "quantity": 5
+                }
+            ],
+            "total_price": 30000,
+            "payment_method": "Tarjeta de débito",
+            "order_date": "2021-09-24T10:13:43.511Z"
+            
         }
     ]
 }
